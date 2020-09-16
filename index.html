@@ -6,6 +6,36 @@
     <link rel='stylesheet' href="gameStyle.css">
 </head>
 <body class="html">
+    <header>
+        <h2 id="title">Tic-Tac-Toe</h2>
+    </header>
+    <form id="form" onsubmit= "return false">
+        <label for="player1">Player1 (X): </label>
+        <input type="text" id="player1" placeholder="Enter Name" required><br>
+        <label for="player2">Player2 (O): </label>
+        <input type="text" id="player2" required placeholder="Enter Name"><br>
+        <input type="submit" id="btn-start" name="btn" value="Start">
+        <input type="button" id="btn-restart" name="btn" value="Restart">
+    </form>
+    <div id="grid-container">
+        <button id="grid-item" data-item="0"></button>
+        <button id="grid-item" data-item="1"></button>
+        <button id="grid-item" data-item="2"></button>
+        <button id="grid-item" data-item="3"></button>
+        <button id="grid-item" data-item="4"></button>
+        <button id="grid-item" data-item="5"></button>
+        <button id="grid-item" data-item="6"></button>
+        <button id="grid-item" data-item="7"></button>
+        <button id="grid-item" data-item="8"></button>
+    </div>
+    <div id="result-container">
+        <h5>Player1 Score: <span id="p1-score">0</span></h5>
+        <h5>Player2 Score: <span id="p2-score">0</span></h5>
+    </div>
+    <footer>
+        <h5>Made by: <a id="footer-link" href="https://github.com/5addam">5addam</a></h5>
+        <h5>For: <a id="footer-link" href="https://www.theodinproject.com/">TheOdinProjet Curriculum</a></h5>
+    </footer>
 
 <script src="game.js"></script>    
 </body>
