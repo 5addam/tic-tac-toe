@@ -127,6 +127,6 @@ const gameRestart = (function(){
 })();
 
 btn_restart.addEventListener('click', ()=>{
-    btn_start.setAttribute('style','box-shadow: 0px 9px 5px var(--secondary-color); transform: translateY(0px); background-color: var(--white); color: black);');
+    btn_start.setAttribute('style','box-shadow: 0px 9px 5px var(--secondary-color); transform: translateY(0px); background-color: default; color: black);');
     gameRestart.restart();
 });
