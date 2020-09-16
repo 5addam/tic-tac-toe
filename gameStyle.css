@@ -24,10 +24,12 @@ header{
     padding: 1rem;
     width: inherit;
     background-color: var(--primary-color);
+    margin: 0 auto 0 auto;
 }
 
 #title{
     color: var(--white);
+    margin: auto;
 }
 
 #grid-container{
@@ -63,7 +65,11 @@ form{
     border: 5px solid var(--primary-color);
     /* border: 5px solid var(--secondary-color); */
 }
-
+form input[type=text]{
+    outline: none;
+    border-radius: 10%;
+    border: 2px solid var(--primary-color);
+}
 form input[id^="btn-"]{
     padding: 0.3rem;
     margin: 10px 5px 0px 5px;
